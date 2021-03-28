@@ -9,21 +9,31 @@
       padding:10px
     }
     ul{
+      border-top:1px gray solid;
+      padding-top: 40px;
       padding-left: 0px;
     }
   </style>
 </head>
 <body>
   <h1>은선 씨 안녕?</h1>
+  <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+  ">
   <br><br>
+  <h3>2021.3.28</h3>
+  <p>
+    은선 씨 여기는 오늘 비가 왔어요. 그곳은 어떤가요?
+  </p><br>
   <ul>
-    <li> <a href="View all.html">View all</a></li>
+    <li> <a href="View-all.html">View all</a></li>
     <br>
     <li> <a href="202103.html">202103</a></li>
   <br>
-  <h3>2021.3.27</h3>
-  <p>
-    저는 그저 은선 씨가 좋아요. 기다릴 수 있어요.
-  </p><br>
 </body>
 </html>
