@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <style>
     h3{
-      border-top:1px gray solid;
-      padding:10px
+      border-top: 1px gray solid;
+      padding: 10px;
     }
     ul{
-      border-top:1px gray solid;
+      border-top: 1px gray solid;
       padding-top: 40px;
     }
     input{
@@ -25,16 +25,30 @@
       target.style.backgroundColor = 'black';
       target.style.color = 'white';
       this.value = 'day';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+      }
     } else {
       target.style.backgroundColor = 'white';
       target.style.color = 'black';
       this.value = 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'blue';
+        i = i + 1;
+      }
     }
   ">
   <br><br>
-  <h3>2021.3.30</h3>
+  <h3>2021.3.31</h3>
   <p>
-    은선 씨.. 저 은선 씨가 너무 좋아요..
+    이제 4월이 다가와요, 저는 은선 씨가 너무 보고 싶어요.
   </p><br>
   <ul>
     <li> <a href="view-all.html">View all</a></li>
