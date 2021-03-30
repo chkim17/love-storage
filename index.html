@@ -12,27 +12,34 @@
       border-top:1px gray solid;
       padding-top: 40px;
     }
+    input{
+      padding: 20px;
+    }
   </style>
 </head>
-<body>
+<body id="target">
   <h1>은선 씨 안녕?</h1>
-  <input type="button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-  ">
-  <input type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
+  <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('#target');
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+    }
   ">
   <br><br>
-  <h3>2021.3.29</h3>
+  <h3>2021.3.30</h3>
   <p>
-    은선 씨가 보고 싶어요.
+    은선 씨.. 저 은선 씨가 너무 좋아요..
   </p><br>
   <ul>
     <li> <a href="view-all.html">View all</a></li>
     <br>
     <li> <a href="202103.html">202103</a></li>
-  <br>
+  </ul>
 </body>
 </html>
