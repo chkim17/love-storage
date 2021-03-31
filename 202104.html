@@ -1,19 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Dear Eunseon</title>
   <meta charset="utf-8">
+  <title>Dear Eunseon for April</title>
   <style>
-    h1{
-      font-size: 45px;
-    }
-    h2{
+    h3{
       border-top: 1px gray solid;
       padding: 10px;
-    }
-    ul{
-      border-top: 1px gray solid;
-      padding-top: 40px;
     }
     input{
       padding: 20px;
@@ -21,7 +14,7 @@
   </style>
   <script>
   function nightDayHandler(self){
-    var target = document.querySelector('#target');
+    var target = document.querySelector('body');
     if(self.value === 'night'){
       target.style.backgroundColor = 'black';
       target.style.color = 'white';
@@ -48,23 +41,16 @@
   }
   </script>
 </head>
-<body id="target">
-  <input id="night_day" type="button" value="night" onclick="
-  nightDayHandler(this);
+<body>
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
   ">
   <br><br>
-  <h1>Eunseon♥♡</h1>
-  <br><br>
-  <h2>2021.4.1</h2>
+  <h1><a href="index.html">은선 씨 안녕?</a></h1>
+  <br>
+  <h3>2021.4.1</h3>
   <p>
     은선 씨, 4월에도 좋은 일만 가득하세요! 저는 은선 씨랑 꽃을 보러 가고 싶어요.
   </p><br>
-  <ul>
-    <li><a href="view-all.html">View all</a></li>
-    <br>
-    <li><a href="202103.html">202103</a></li>
-    <br>
-    <li><a href="202104.html">202104</a></li>
-  </ul>
 </body>
 </html>

@@ -12,15 +12,13 @@
       padding: 20px;
     }
   </style>
-</head>
-<body>
-  <h1><a href="index.html">은선 씨 안녕?</a></h1>
-  <input type="button" value="night" onclick="
+  <script>
+  function nightDayHandler(self){
     var target = document.querySelector('body');
-    if(this.value === 'night'){
+    if(self.value === 'night'){
       target.style.backgroundColor = 'black';
       target.style.color = 'white';
-      this.value = 'day';
+      self.value = 'day';
 
       var alist = document.querySelectorAll('a');
       var i = 0;
@@ -31,7 +29,7 @@
     } else {
       target.style.backgroundColor = 'white';
       target.style.color = 'black';
-      this.value = 'night';
+      self.value = 'night';
 
       var alist = document.querySelectorAll('a');
       var i = 0;
@@ -40,8 +38,16 @@
         i = i + 1;
       }
     }
+  }
+  </script>
+</head>
+<body>
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
   ">
   <br><br>
+  <h1><a href="index.html">은선 씨 안녕?</a></h1>
+  <br>
   <h3>2021.3.4</h3>
   <p>
     은선 씨 잘 지내나요? 이번엔 당황하지 않으셨죠? 지난번에 은선 씨에게 편지를 돌려받고 헤어진 뒤로 마음이 너무 아팠답니다. 하지만 포기하지 않았어요. 그날 이후로 오히려 은선 씨에 대한 마음은 더 커지고 은선 씨가 더 좋아졌어요. 그래서 정말 고민했어요. 어떻게 은선 씨에게 내 마음을 계속 어필할 수 있을까, 어떻게 하면 은선 씨가 불편하지 않고 당황하지 않게 은선 씨에게 내 마음을 계속 전달할 수 있을까 하면서 말이에요. 그렇게 일주일을 넘게 고민하면서 제게 떠오른 하나의 아이디어가 있었답니다. 그게 바로 지금 보는 웹페이지에요 은선 씨.
@@ -170,6 +176,10 @@
   <h3>2021.3.31</h3>
   <p>
     이제 4월이 다가와요, 저는 은선 씨가 너무 보고 싶어요.
+  </p><br>
+  <h3>2021.4.1</h3>
+  <p>
+    은선 씨, 4월에도 좋은 일만 가득하세요! 저는 은선 씨랑 꽃을 보러 가고 싶어요.
   </p><br>
 </body>
 </html>
